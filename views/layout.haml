@@ -1,0 +1,44 @@
+!!!  
+%html  
+  %head  
+    %title
+    %meta{:name => "description", :content => ""}
+    %meta{:name => "author", :content => "Charlie Gleason"}
+    -# %link{:href => "/images/favicon.ico", :rel => "shortcut icon"}
+    -# %link{:href => "/images/apple-touch-icon.png", :rel => "apple-touch-icon"}
+
+    %meta{:content => "", :property => "og:title"}
+    %meta{:content => "", :property => "og:type"}
+    %meta{:content => "", :property => "og:description"}
+    %meta{:content => "", :property => "og:url"}
+    %meta{:content => "", :property => "og:image"}
+    %meta{:content => "", :property => "og:site_name"}
+    %meta{:content => "", :property => "fb:admins"}
+
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"}
+  %body  
+    .header
+      .wrapper
+        %h1
+          
+    
+    .content
+      .wrapper
+        =yield
+
+    .footer
+      .wrapper
+
+    %script{:src => "http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"}
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"}
+
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXXX-X']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
