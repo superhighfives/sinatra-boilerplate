@@ -52,7 +52,7 @@ If you already have an SSH key set up on your local machine, you'll likely see t
 
 If you get a **publickey error (access denied)** when you try and push the site to [Heroku](http://heroku.com/), add your public key manually.
 
-    # If for some reason this doesn't occur, you can add them manually
+    # Add your public key to Heroku manually
     > heroku keys:add
 
 Next up, we set up the app and deploy it.
