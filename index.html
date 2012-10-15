@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Sinatra Boilerplate by superhighfives</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Sinatra Boilerplate</h1>
+        <p class="header">A standard, Heroku ready Sinatra boilerplate, with Compass and Sass.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/superhighfives/sinatra-boilerplate/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/superhighfives/sinatra-boilerplate/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/superhighfives/sinatra-boilerplate">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/superhighfives">superhighfives</a></p>
+
+
+      </header>
+      <section>
+        <h1>Sinatra Boilerplate</h1>
+
+<p>A standard Sinatra boilerplate, with Compass and Sass.</p>
+
+<p>This is a <a href="http://heroku.com/">Heroku</a> ready <a href="http://sinatrarb.com/">Sinatra</a> app put together by <a href="http://charliegleason.com/">Charlie Gleason</a> (with help from <a href="http://github.com/joho">John Barton</a>).</p>
+
+<h2>Getting things up and running</h2>
+
+<p>To get the boilerplate running, grab a copy locally.</p>
+
+<p>Navigate to the directory you downloaded Sinatra Boilerplate, and run the following:</p>
+
+<pre><code># Install the appropriate Ruby gems (shorthand for bundle install)
+&gt; bundle
+
+# Start the server
+&gt; foreman start
+</code></pre>
+
+<p>The app will now be accessible at <a href="http://0.0.0.0:5000">http://0.0.0.0:5000</a></p>
+
+<h2>Getting it onto Heroku</h2>
+
+<p>To deploy to <a href="http://heroku.com/">Heroku</a>, first up, install the <a href="http://toolbelt.heroku.com/">Heroku Toolbelt</a>.</p>
+
+<p>This will give you access to the following tools:</p>
+
+<ul>
+<li>
+<a href="http://github.com/heroku/heroku">Heroku</a> (for Heroku on the command line)</li>
+<li>
+<a href="http://code.google.com/p/git-osx-installer">Git</a> (for version control)</li>
+<li>
+<a href="http://github.com/ddollar/foreman">Foreman</a> (for running Sinatra locally)</li>
+</ul><h2>Sign up for Heroku and login</h2>
+
+<p>Once you have an account for <a href="http://heroku.com/">Heroku</a> run the following in your terminal.</p>
+
+<pre><code># Once you've installed the Heroku toolbelt, log in
+&gt; heroku login
+</code></pre>
+
+<p>This will ask for your <a href="http://heroku.com/">Heroku</a> credentials.</p>
+
+<pre><code># Enter your Heroku credentials.
+&gt; Email: adam@example.com
+&gt; Password: ********
+</code></pre>
+
+<p>If you already have an SSH key set up on your local machine, you'll likely see the following. <a href="http://heroku.com/">Heroku</a> will help you set up a key, which makes deployment much quicker, meaning you don't have to enter your password every time you deploy. Win.</p>
+
+<pre><code># If you haven't set up keys, Heroku will help you out. For example:
+# Could not find an existing public key.
+&gt; Would you like to generate one? [Yn]
+# Generating new SSH public key.
+# Uploading ssh public key /Users/you/.ssh/id_rsa.pub
+</code></pre>
+
+<p>If you get a <strong>publickey error (access denied)</strong> when you try and push the site to <a href="http://heroku.com/">Heroku</a>, add your public key manually.</p>
+
+<pre><code># If for some reason this doesn't occur, you can add them manually
+&gt; heroku keys:add
+</code></pre>
+
+<p>Next up, we set up the app and deploy it.</p>
+
+<h2>Deploy the app</h2>
+
+<p>Set up your <a href="http://heroku.com/">Heroku</a> stack and deploy the app to it.</p>
+
+<pre><code>&gt; heroku create
+# Creating temp... done, stack is cedar
+# http://temp.herokuapp.com/ | git@heroku.com:temp.git
+# Git remote heroku added
+
+# Deploy the app
+&gt; git push heroku master
+
+# Celebrate!
+&gt; heroku open
+</code></pre>
+
+<p>Joy!</p>
+
+<h2>Name it something fancy!</h2>
+
+<p>You can rename the app from the randomly generated <a href="http://random-subdomain.heroku.com/">http://random-subdomain.heroku.com/</a> to something more meaningful using:</p>
+
+<pre><code># Rename your subdomain
+&gt; heroku rename newname
+</code></pre>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
