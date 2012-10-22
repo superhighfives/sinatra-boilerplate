@@ -6,6 +6,7 @@ gem 'sinatra'
 gem 'haml'
 gem 'sass'
 gem 'maruku'
+gem 'coffee-script'
 
 group :development do
   gem 'heroku'

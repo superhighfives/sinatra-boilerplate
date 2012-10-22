@@ -18,3 +18,4 @@ _yardoc
 doc/
 
 .sass-cache
+/bin
